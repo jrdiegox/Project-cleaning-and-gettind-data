@@ -72,3 +72,5 @@ grouped<-split(data,data$subject.activity)
 
 tidytablesd<-sapply(grouped,FUN = function(x)sapply(x[,-1],sd))
 tidytablemean<-sapply(grouped,FUN = function(x)colMeans(x[,-1]))
+setwd("C:/Users/Diego/Documents/Cosas utiles de R")
+write.table(tidytablemean,"./tidydata.txt",row.name=FALSE)

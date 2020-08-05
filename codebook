@@ -1,0 +1,12 @@
+In chronological order:
+1.for y_test and y_train it was decided to tranform (1,2,3,4,5,6) to "WALKING","WALKING_UPSTAIRS" ,"WALKING_DOWNSTAIRS"
+        ,"SITTING","STANDING","LAYING"
+       
+2.y_test and y_train were later modified to include old y_test and y_train with subject_test and subject_train respectively
+
+3.test and train were created by cbinding y_test and y_train and  x_test and x_train respectively
+
+4.data were created rbinding test and train
+
+5. there were repeated colnames so they were ranamed by adding a diferent number to each repeated name
+
